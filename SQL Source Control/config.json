@@ -1,0 +1,76 @@
+{
+  "Version": "0.1",
+  "Tables": [
+    {
+      "SchemaName": "public",
+      "TableName": "ticket",
+      "Columns": [
+        {
+          "ColumnName": "title",
+          "Type": "STRING"
+        },
+        {
+          "ColumnName": "version",
+          "Type": "TIMESTAMP"
+        },
+        
+        {
+            "ColumnName": "version2",
+            "Type": "TIMESTAMP"
+        },
+        {
+          "ColumnName": "comment_chain",
+          "Type": "UUID"
+        },
+        {
+          "ColumnName": "id",
+          "Type": "UUID"
+        }
+      ]
+    },
+    {
+        "SchemaName": "public",
+        "TableName": "ticket_description",
+        "Columns": [
+          {
+            "ColumnName": "title",
+            "Type": "STRING"
+          },
+          {
+            "ColumnName": "version",
+            "Type": "TIMESTAMP"
+          },
+          
+          {
+              "ColumnName": "version2",
+              "Type": "TIMESTAMP"
+          },
+          {
+            "ColumnName": "id",
+            "Type": "UUID"
+          }
+        ]
+      },
+    {
+      "SchemaName": "public",
+      "TableName": "comment",
+      "Columns": [
+        {
+          "ColumnName": "id",
+          "Type": "UUID"
+        },
+        {
+          "ColumnName": "contents",
+          "Type": "STRING"
+        },
+        {
+          "ColumnName": "version",
+          "Type": "TIMESTAMP"
+        }
+      ]
+    }
+  ],
+  "TrackedSchemas": [
+    "public"
+  ]
+}
